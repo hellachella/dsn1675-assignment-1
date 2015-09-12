@@ -28,9 +28,12 @@ h1{
 }
 
 nav ol{
-	display: inline;
-	margin: 0 auto;
-	padding-left: 0;
+	display: block;
+	margin:  0 auto;
+	padding: 0;
+	width: 100%;
+	background-color: yellow;
+
 }
 
 nav li{
@@ -39,12 +42,19 @@ nav li{
 	float: left;
 	list-style-type: none;
 	margin: 0;
-	padding: 1em 0;
-	line-height: 1em;
+	padding:  0;
+	vertical-align: center;
+
+}
+
+@media only screen and (max-width: 445px){
+	nav li{
+		width: 50%;
+	}
 }
 
 nav li:hover{
-	color: rgba(23,82,1,1);
+	background-color: lightgrey;
 }
 
 header{
@@ -122,6 +132,7 @@ figcaption p{
 	padding: 1em 0;
 	display: block;
 	width: 100%;
+	border-top: 1px solid lightgrey;
 
 }
 
