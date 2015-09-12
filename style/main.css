@@ -40,12 +40,11 @@ nav li{
 	list-style-type: none;
 	margin: 0;
 	padding: 1em 0;
-	background-color: rgba(23, 82,1, 0.5);
 	line-height: 1em;
 }
 
 nav li:hover{
-	background-color: rgba(23,82,1,1);
+	color: rgba(23,82,1,1);
 }
 
 header{
@@ -103,7 +102,6 @@ figcaption p{
 	font-size: .8em;
 	padding: 0;
 	margin: 0;
-
 }
 
 
@@ -121,10 +119,9 @@ figcaption p{
 
 .main img{
 	margin: 0 auto;
-
-	max-width: 399px;
 	padding: 1em 0;
 	display: block;
+	width: 100%;
 
 }
 
