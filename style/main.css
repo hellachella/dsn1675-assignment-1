@@ -234,15 +234,23 @@ dd{
 
 .theatre dl{
 	width: 100%;
-	margin: 1em;
-	list-style-type: none;
+	margin: 1em 0;
 	padding; 0;
 }
 
-.theatre dt, .theatre. dd{
-	float: left;
-	clear: left;
+.theatre dt, .theatre dd{
 	padding: 0;
+	margin: 0;
+}
+
+.theatre dt{
+width: 100%;
+background: lightgrey;
+margin-top: 1em;
+}
+
+.theatre dd{
+	width: 100%;
 }
 
 /*Footer*/
