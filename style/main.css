@@ -4,6 +4,7 @@ html{
 	margin 0;
 	padding; 0;
 	box-sizing:border-box;
+	font-family: "Open Sans",sans-serif;
 }
 
 *, *::before, *::after{
@@ -16,8 +17,12 @@ body{
 
 a{
 	text-decoration: none;
-	color: #fff;
+	color: #000;
 }
+
+
+/* Header*/
+
 
 h1{
 	text-align: center;
@@ -41,15 +46,16 @@ nav li{
 }
 
 nav li:hover{
-	background-color: green;
+	background-color: rgba(23,82,1,1);
 }
 
 header{
-	background-color: yellow;
+
 	margin: 0;
 	overflow: hidden;
 }
 
+/*Hero Banner*/
 .hero-div{
 
 	background-color: green;
@@ -74,32 +80,87 @@ header{
 }
 
 figcaption{
+
 	position: absolute;
-	bottom: 1em;
+	bottom: 0;
 	left: 10%;
-	background: rgba(255,255,255,0.4);
+	background: rgba(255,255,255,0.5);
 	width:80%;
-	padding: 0 1em;
+	padding: 0 .4em;
 	text-align: center;
-	border-radius: 10px;
-	color: #fff;
+	border-radius: 10px 10px 0 0;
+	color: rgb(27, 40, 51);
 }
 
 figcaption h2{
 	padding: 0.5em 0 0 0;
 	margin: 0;
+	font-size: 1em;
+	line-height: 1em;
 }
 
 figcaption p{
+	font-size: .8em;
 	padding: 0;
 	margin: 0;
+	line-height 1.2em;
 }
 }
-
-//* IMAGES*//
-
 
 	figure{
 		position: relative;
 	}
 
+/*Seven Wonders*/
+
+.main{
+	margin: 0 1em;
+}
+
+.main h3{
+	clear: left;
+	padding: 0;
+	margin: 0;
+	border-top: 2px solid lightgrey;
+}
+
+.main h2{
+	color: red;
+	text-align: center;
+}
+
+.main p{
+clear: both;
+max-width: 280px;
+text-align: center;
+border-radius: 10px;
+border: 1px solid green;
+}
+
+.main p:hover{
+	background-color: rgba(23,82,1, 0.5);
+}
+
+
+.subtitle{
+	padding: 0;
+}
+
+
+dl{
+	padding: 0;
+	margin: 0;
+	background-color: yellow;
+}
+
+dt{
+	float: left;
+	padding: 0;
+	margin: 0;
+	clear: left;
+}
+
+dd{
+	float: left;
+	margin: 0;
+}
