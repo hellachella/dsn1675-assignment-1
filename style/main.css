@@ -188,3 +188,43 @@ dd{
 	margin: 0;
 	padding-left: 0.5em;
 }
+
+
+/*Area BUY*/
+
+.buy{
+	margin: 0 1em;
+}
+
+
+.buy h2{
+	text-align: center;
+	clear: both;
+}
+
+.buy ul{
+	display: block;
+
+	margin: 0 auto;
+	width: 70%;
+	overflow: hidden;
+	padding: 0;
+
+}
+
+.buy li{
+	float: left;
+	list-style-type: none;
+	text-align: center;
+	background-color: pink;
+	border-radius: 50px;
+	width: 48%;
+	margin: 0 1%;
+
+}
+
+/*Theatre*/
+
+.theatre{
+	clear: left;
+}
