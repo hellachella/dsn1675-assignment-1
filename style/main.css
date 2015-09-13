@@ -100,13 +100,13 @@ nav ul li:hover { background: #FFF }
     display: block;
     clear: both;
 }
-.hero-div figure {
+figure {
     display: block;
     padding: 0;
     margin: 0;
     position: relative;
 }
-.hero-div img {
+img {
     width: 100%;
     padding: 0;
     margin: 0;
@@ -223,51 +223,43 @@ dd {
     margin: 0 1%;
 }
 .buy li:hover { background-color: #7A8B8B;; }
+
 /*Theatre*/
-.theatre {
-    clear: left;
+.theatre{
+    padding: 0;
     margin: 0;
-    display: block;
+}
+ .theatre img{
     width: 100%;
     padding: 0;
-    background-image: url(../images/atlantisz.jpg);
+ }
 
-}
-.theatre figure { position: relative }
-.theatre h2 {
+ .theatre figure{
+    width: 100%;
     margin: 0;
-    padding: .5em;
-    text-transform: uppercase;
-    text-align: center;
-    background-color: #7A8B8B;
-    background-size: auto;
+    padding: 0;
+ }
 
-}
-.theatre figcaption {
+ .theatre figcaption{
     position: absolute;
-    bottom: 2.5em;
-    border-radius: 10px;
-    padding: 10px;
-    line-height: 1.2em;
+    bottom: 0;
+    padding: 1em;
+ }
+
+.theatre h2{
+    text-align: center;
+    background-color red;
 }
-.theatre img {
-    padding: 0 0 2em 0;
-    margin: 0;
-    width: 100%;
-    border-top: none;
-}
-.theatre a {
-    width: 100%;
-    padding: 5px;
-    border-radius: 10px;
+
+.theatre a{
     text-transform: uppercase;
 }
-.theatre a:hover { color: red }
-.theatre dl {
-    width: 100%;
-    padding: 0;
+
+.theatre a:hover{
+    color: red;
+    font-weight: bold;
 }
-strong { text-transform: uppercase }
+
 /*Footer*/
 footer {
     padding: .5em 1em;
