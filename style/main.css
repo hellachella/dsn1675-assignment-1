@@ -99,6 +99,7 @@ figcaption {
     text-align: center;
     border-radius: 10px 10px 0 0;
     color: #000;
+    line-height: 1em;
 }
 figcaption h2 {
     padding: 0.5em 0 0 0;
@@ -114,28 +115,26 @@ figcaption p {
 
 /*Seven Wonders*/
 
-.main {
-    margin: 0 1em;
-}
+
 .main img,
 .theatre img {
-    margin: 0 auto;
-    padding: 1em 0;
+    margin:  0;
+    padding:  1em 1em 0;
     display: block;
     width: 100%;
     border-top: 1px solid lightgrey;
 }
-.theatre img {
-    border-top: none;
-}
 .main h3 {
     clear: left;
     padding: 0;
-    margin: 0;
+    margin: 0 1em;
     color: #1B2833
 }
 .main h2 {
     color: #1B2833;
+    background-color: #e2e2e2;
+    margin: 0;
+    padding: .5em;
     text-align: center;
 }
 .main p {
@@ -144,7 +143,7 @@ figcaption p {
     text-align: center;
     border-radius: 10px;
     background-color: #dcdcdc;
-    margin: 1em 0;
+    margin: 1em;
     float: left;
     padding: .5em;
 }
@@ -160,7 +159,7 @@ nav li:hover {
 }
 .main dl {
     padding: 0;
-    margin: 10px 0;
+    margin: 10px 1em;
     background-color: red;
 }
 dt {
@@ -216,21 +215,33 @@ dd {
     clear: left;
     margin: 0;
     display: block;
+		width: 100%;
+		padding: 0;
+		background: yellow;
+}
+.theatre figure{
+	position: relative;
 }
 .theatre h2 {
-    margin: 0 1em;
+    margin: 0;
+    padding: .5em;
     text-transform: uppercase;
     text-align: center;
-    padding: 1em;
+    background-color: #e2e2e2;
 }
 .theatre figcaption {
+	  position: absolute;
     bottom: 2em;
-    line-height: 1.5em;
     border-radius: 10px;
+    padding: 10px;
 }
 .theatre img {
-    padding: 0;
-}
+    padding: 0 0 2em 0;
+    margin: 0;
+    width: 100%;
+    border-top: none;
+    }
+
 .theatre a {
     width: 100%;
     padding: 5px;
@@ -240,7 +251,6 @@ dd {
 .theatre a:hover {
     background-color: rgba(255, 255, 255, 0.5);
     color: red;
-    padding: 0 50px;
 }
 .theatre dl {
     width: 100%;
@@ -274,7 +284,7 @@ footer a:hover {
 /*Activities*/
 
 .activities {
-    padding: 1em;
+    padding: 0 1em;
 }
 .activities dt,
 .activities dd {
