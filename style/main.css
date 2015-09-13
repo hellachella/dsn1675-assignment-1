@@ -1,7 +1,5 @@
 html {
     box-sizing: border-box;
-    line-height: 1.5em;
-    box-sizing: border-box;
 }
 *,
 *::before,
@@ -18,6 +16,10 @@ a {
 }
 /* Header*/
 
+header{
+margin: 0 1em;
+padding: 0
+}
 
 header ul{
     display: inline-block;
@@ -25,39 +27,51 @@ header ul{
     width: 100%;
     padding: 0;
     margin: 0;
-    background: pink;
+    position: relative;
 }
 
 header li{
     text-align: center;
+    float: left;
+    vertical-align: text-bottom;
+
+
+
 }
 header li:nth-of-type(1), .header ul li:nth-of-type(3){
-    width:20%;
+    max-width:20%;
+    min-width: 50px;
 }
 header li:nth-of-type(2){
     width: 60%;
     margin: 0;
+    position: absolute;
+    bottom: 0;
+    left: 20%;
 }
-
+header li:nth-of-type(3){
+    padding: .5em;
+    margin: 0 0 1em;
+    position: absolute;
+    bottom:0;
+    left: 80%;
+    width: 20%;
+    border-radius: 20px;
+    background-color: #e2e2e2;
+}
 header img{
 width: 100%;
+padding: 10% 10% 0;
+margin-bottom: 1em;
 }
 
 h1{
-    width: 60%;
+    margin-top: 1em;
     font-size: 24px;
 }
 
-header li{
 
-    float: left;
-    vertical-align: text-bottom;
-    background: green
-}
 
-header li:nth-of-type(3){
-    background: grey;
-}
 /*
 header img{
 	width: 20%;
@@ -83,6 +97,7 @@ background: pink;
 }*/
 nav{
 clear: left;
+
 }
 nav ol {
     display: block;
@@ -99,11 +114,20 @@ nav li {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    vertical-align: center;
 }
+
+nav li:hover{
+    background: #d3e1c1;
+}
+
+
 @media only screen and (max-width: 445px) {
     nav li {
         width: 50%;
+    }
+
+    header li{
+        margin: 1em 0 0;
     }
 }
 /*Hero Banner*/
@@ -294,8 +318,7 @@ dd {
 }
 .theatre dl {
     width: 100%;
-    padding;
-    0;
+    padding: 0;
 }
 strong {
     text-transform: uppercase;
