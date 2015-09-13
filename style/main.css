@@ -79,11 +79,14 @@ nav li {
     float: left;
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    font-size: .8em;
+    padding: .5em 0;
 }
 nav ul li:hover { background: #FFF }
-@media only screen and (max-width: 445px) {
-    nav li { width: 50% }
+@media only screen and (max-width: 450px) {
+    nav li {
+        width: 50%;
+    }
     header li { margin: 1em 0 0 }
 }
 /*Hero Banner*/
