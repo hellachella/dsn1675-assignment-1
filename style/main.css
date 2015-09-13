@@ -196,23 +196,27 @@ dd{
 	margin: 0;
 	text-align: center;
 	background-color: lightgrey;
-	padding: .5em 0 2em;
+	padding: 0 0 3em 0;
 	clear: left;
+	overflow: hidden;
 }
 
 
 .buy h2{
 	text-align: center;
 	clear: both;
+	background-color: #e2e2e2;
+	margin: 0 0 0 0;
+	padding: .5em;
 
 }
 
 .buy ul{
 	display: block;
-	margin: 0 auto;
+	margin: 0 auto 2em;
 	width: 70%;
 	overflow: hidden;
-	padding: 0;
+
 
 }
 
@@ -225,6 +229,10 @@ dd{
 	width: 48%;
 	padding: 1em;
 	margin: 0 1%;
+}
+
+.buy li:hover{
+	background-image: url("../images/mausoleum.jpg");
 }
 
 /*Theatre*/
@@ -267,8 +275,8 @@ dd{
 
 /*Footer*/
  footer{
- 	padding: 0 1em 1em;
- 	background-color: grey;
+ 	padding: .5em 1em;
+ 	background-color: #b4b4b4;
  	clear: both;
  }
 
