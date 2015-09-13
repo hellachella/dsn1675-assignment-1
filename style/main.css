@@ -231,9 +231,10 @@ dd {
 }
 .theatre figcaption {
 	  position: absolute;
-    bottom: 2em;
+    bottom: 2.5em;
     border-radius: 10px;
     padding: 10px;
+    line-height: 1.2em;
 }
 .theatre img {
     padding: 0 0 2em 0;
@@ -249,7 +250,7 @@ dd {
     text-transform: uppercase;
 }
 .theatre a:hover {
-    background-color: rgba(255, 255, 255, 0.5);
+
     color: red;
 }
 .theatre dl {
