@@ -13,6 +13,7 @@ body {
 a {
     text-decoration: none;
     color: #000;
+    display: block;
 }
 /* Header*/
 
@@ -37,7 +38,9 @@ header li {
 header li:nth-of-type(1),
 .header ul li:nth-of-type(3) {
     max-width: 20%;
-    min-width: 50px;
+    min-width: 3.125em;
+    display: block;
+    vertical-align: middle;
 }
 header li:nth-of-type(2) {
     width: 60%;
@@ -90,14 +93,7 @@ nav li {
 nav ul li:hover {
     background: #FFF
 }
-@media only screen and (max-width: 450px) {
-    nav li {
-        width: 50%;
-    }
-    header li {
-        margin: 1em 0 0
-    }
-}
+
 /*Hero Banner*/
 
 .hero-div {
@@ -146,17 +142,12 @@ figcaption p {
 .main img,
 .theatre img {
     margin: 0;
-    padding: 1em 1em 0;
+    padding: 1em 1em 0 1em;
     display: block;
     width: 100%;
     border-top: 1px solid lightgrey;
 }
-.main h3 {
-    clear: left;
-    padding: 0;
-    margin: 0 1em;
-    color: #1B2833;
-}
+
 .main h2 {
     color: #1B2833;
     background-color: #e2e2e2;
@@ -185,15 +176,18 @@ nav li:hover {
 .subtitle {
     padding: 0
 }
+
+.main h3{
+margin: 0 0 0 1em;
+}
 .main dl {
     padding: 0;
-    margin: 10px 1em;
-    background-color: red;
+    margin: 0 1em;
 }
 dt {
-    float: left;
     padding: 0;
     margin: 0;
+    float: left;
     clear: left;
 }
 dd {
@@ -339,7 +333,14 @@ footer a:hover {
     }
 }
 
-@media only screen and (max-width: 18em) {
+
+/*Hi Thomas!  I was having an issue trying to make min width work because I am
+ working backward on this (big to small) and I found that the only efficient way I could
+ work around it is to use max-width instead of min-width.  Normally I would
+ design small to large and start at 0em for min-width, but my brain is not working around that. */
+
+
+@media only screen and (max-width: 20em) {
     header {
         margin: 0;
         padding: 0;
@@ -447,15 +448,76 @@ footer a:hover {
         display: block;
     }
     .theatre a {
-        text-transform: uppercase;
         text-align: center;
         background: lightgrey;
         padding: 1em;
         border-radius: 50px;
         display: block;
     }
-    .theatre a:hover {
-        color: red;
-        font-weight: bold;
+
+}
+
+
+@media only screen and (min-width: 450px) {
+
+    header li:nth-of-type(2){
+        font-size: 1em;
+        margin-top: 1em;
     }
+
+    nav li {
+        width: 50%;
+    }
+    header li {
+        margin: 1em 0 0
+    }
+}
+
+@media only screen and (min-width:600px){
+
+header li:nth-of-type(2){
+    font-size: 1em;
+    margin-top: 0;
+}
+
+header{
+    margin: 0;
+    padding: 0;
+    }
+
+header li:nth-of-type(1){
+    width: 50%;
+    padding: 0;
+    margin: 0;
+}
+
+header li:nth-of-type(3){
+    width: 10%;
+}
+
+
+.main img {
+    margin: 0 0 1em 0;
+    padding: 1em 1em 0;
+    width: 50%;
+    float: left;
+    border-top: 1px solid lightgrey;
+    clear: left;
+
+}
+.main dl, .main h3{
+    width: 50%;
+    float: left;
+    padding: 0;
+    margin: 1em 0 0 0;
+
+}
+
+.main p{
+    float: left;
+    clear: none;
+    width: 30%;
+}
+
+
 }
