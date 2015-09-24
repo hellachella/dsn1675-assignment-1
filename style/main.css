@@ -458,7 +458,7 @@ footer a:hover {
 }
 
 
-@media only screen and (min-width: 450px) {
+@media only screen and (min-width: 28em) {
 
     header li:nth-of-type(2){
         font-size: 1em;
@@ -473,7 +473,7 @@ footer a:hover {
     }
 }
 
-@media only screen and (min-width:600px){
+@media only screen and (min-width:37em){
 
 header li:nth-of-type(2){
     font-size: 1em;
@@ -543,6 +543,4 @@ nav li {
 nav ul li:hover {
     background: #FFF
 }
-
-
 }
