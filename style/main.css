@@ -1,546 +1,591 @@
 html {
-    box-sizing: border-box
+    box-sizing:border-box
 }
-*,
-*::before,
-*::after {
-    box-sizing: inherit;
-}
-body {
-    font-family: 'Noto Sans', sans-serif;
-    margin: 0;
-}
-a {
-    text-decoration: none;
-    color: #000;
-    display: block;
-}
-/* Header*/
 
+*,::before,::after {
+    box-sizing:inherit
+}
+
+body {
+    font-family:'Noto Sans',sans-serif;
+    margin:0
+}
+
+a {
+    text-decoration:none;
+    color:#000;
+    display:block
+}
+
+/* Header*/
 header {
-    margin: 0 1em;
-    padding: 15px 0 0;
+    margin:0 1em;
+    padding:15px 0 0
 }
+
 header ul {
-    display: inline-block;
-    list-style-type: none;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    position: relative;
+    display:inline-block;
+    list-style-type:none;
+    width:100%;
+    padding:0;
+    margin:0;
+    position:relative
 }
+
 header li {
-    text-align: center;
-    float: left;
-    display: block;
-    vertical-align: middle;
+    text-align:center;
+    float:left;
+    display:block;
+    vertical-align:middle
 }
-header li:nth-of-type(1),
-.header ul li:nth-of-type(3) {
-    max-width: 20%;
-    min-width: 3.125em;
-    display: block;
-    vertical-align: middle;
+
+header li:nth-of-type(1),.header ul li:nth-of-type(3) {
+    max-width:20%;
+    min-width:3.125em;
+    display:block;
+    vertical-align:middle
 }
+
 header li:nth-of-type(2) {
-    width: 60%;
-    margin: 0;
-    position: absolute;
-    bottom: 0;
-    left: 20%;
+    width:60%;
+    margin:0;
+    position:absolute;
+    bottom:0;
+    left:20%
 }
+
 header li:nth-of-type(3) {
-    padding: .5em;
-    margin: 0 0 .5em;
-    position: absolute;
-    bottom: 0;
-    left: 80%;
-    width: 20%;
-    border-radius: 20px;
-    background-color: #e2e2e2;
+    padding:.5em;
+    margin:0 0 .5em;
+    position:absolute;
+    bottom:0;
+    left:80%;
+    width:20%;
+    border-radius:20px;
+    background-color:#e2e2e2
 }
+
 header li:nth-of-type(3):hover {
-    background-color: #7A8B8B;
+    background-color:#7A8B8B
 }
+
 header img {
-    width: 100%;
-    padding: 10% 10% 0;
-    margin-bottom: .5em;
+    width:100%;
+    padding:10% 10% 0;
+    margin-bottom:.5em
 }
+
 h1 {
-    font-size: 24px;
-    margin: .5em;
+    font-size:24px;
+    margin:.5em
 }
+
 nav {
-    clear: left;
-    display: block;
+    clear:left;
+    display:block
 }
+
 nav ol {
-    margin: 0;
-    padding: 0;
-    width: 100%;
+    margin:0;
+    padding:0;
+    width:100%
 }
+
 nav li {
-    background: #d2d2d2;
-    width: 25%;
-    text-align: center;
-    float: left;
-    list-style-type: none;
-    margin: 0;
-    font-size: .8em;
-    padding: .5em 0;
+    background:#d2d2d2;
+    width:25%;
+    text-align:center;
+    float:left;
+    list-style-type:none;
+    margin:0;
+    font-size:.8em;
+    padding:.5em 0
 }
+
 nav ul li:hover {
-    background: #FFF
+    background:#FFF
 }
 
 /*Hero Banner*/
-
 .hero-div {
-    margin: 0;
-    padding: 0;
-    display: block;
-    clear: both;
+    margin:0;
+    padding:0;
+    display:block;
+    clear:both
 }
-figure {
-    display: block;
-    padding: 0;
-    margin: 0;
-    position: relative;
-}
-img {
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    display: block;
-}
-figcaption {
-    position: absolute;
-    bottom: 0;
-    left: 10%;
-    background: rgba(255, 255, 255, 0.6);
-    width: 80%;
-    padding: 0 1em 1em;
-    text-align: center;
-    border-radius: 10px 10px 0 0;
-    color: #000;
-    line-height: 1em;
-}
-figcaption h2 {
-    padding: 0.5em 0 0 0;
-    margin: 0;
-    font-size: 1em;
-    line-height: 1em;
-}
-figcaption p {
-    font-size: .8em;
-    padding: 0;
-    margin: 0;
-}
-/*Seven Wonders*/
 
-.main img,
-.theatre img {
-    margin: 0;
-    padding: 1em 1em 0 1em;
-    display: block;
-    width: 100%;
-    border-top: 1px solid lightgrey;
+figure {
+    display:block;
+    padding:0;
+    margin:0;
+    position:relative
+}
+
+img {
+    width:100%;
+    padding:0;
+    margin:0;
+    display:block
+}
+
+figcaption {
+    position:absolute;
+    bottom:0;
+    left:10%;
+    background:rgba(255,255,255,0.6);
+    width:80%;
+    padding:0 1em 1em;
+    text-align:center;
+    border-radius:10px 10px 0 0;
+    color:#000;
+    line-height:1em
+}
+
+figcaption h2 {
+    padding:.5em 0 0;
+    margin:0;
+    font-size:1em;
+    line-height:1em
+}
+
+figcaption p {
+    font-size:.8em;
+    padding:0;
+    margin:0
+}
+
+/*Seven Wonders*/
+.main img,.theatre img {
+    margin:0;
+    padding:1em 1em 0;
+    display:block;
+    width:100%;
+    border-top:1px solid #d3d3d3
 }
 
 .main h2 {
-    color: #1B2833;
-    background-color: #e2e2e2;
-    margin: 0;
-    padding: .5em;
-    text-align: center;
+    color:#1B2833;
+    background-color:#e2e2e2;
+    margin:0;
+    padding:.5em;
+    text-align:center
 }
+
 .main p {
-    clear: left;
-    max-width: 280px;
-    text-align: center;
-    border-radius: 10px;
-    background-color: #dcdcdc;
-    margin: 1em;
-    float: left;
-    padding: .5em;
+    clear:left;
+    max-width:280px;
+    text-align:center;
+    border-radius:10px;
+    background-color:#dcdcdc;
+    margin:1em;
+    float:left;
+    padding:.5em
 }
-.main p:hover,
-nav li:hover {
-    /*    background-color: #549ABA;;
+
+.main p:hover,nav li:hover {
+/*    background-color: #549ABA;;
     color: #fff;*/
-
-    background-color: #7A8B8B;
-    ;
+    background-color:#7A8B8B
 }
+
 .subtitle {
-    padding: 0
+    padding:0
 }
 
-.main h3{
-margin: 0 0 0 1em;
+.main h3 {
+    margin:0 0 0 1em
 }
+
 .main dl {
-    padding: 0;
-    margin: 0 1em;
+    padding:0;
+    margin:0 1em
 }
+
 dt {
-    padding: 0;
-    margin: 0;
-    float: left;
-    clear: left;
+    padding:0;
+    margin:0;
+    float:left;
+    clear:left
 }
+
 dd {
-    float: left;
-    margin: 0;
-    padding-left: 0.5em;
+    float:left;
+    margin:0;
+    padding-left:.5em
 }
+
 /*Area BUY*/
-
 .buy {
-    margin: 0;
-    text-align: center;
-    background-color: lightgrey;
-    clear: left;
-    overflow: hidden;
-    display: block;
+    margin:0;
+    text-align:center;
+    background-color:#d3d3d3;
+    clear:left;
+    overflow:hidden;
+    display:block
 }
+
 .buy p {
-    padding: 1em
+    padding:1em
 }
+
 .buy h2 {
-    text-align: center;
-    clear: both;
-    background-color: #e2e2e2;
-    margin: 0 0 0 0;
-    padding: .5em;
+    text-align:center;
+    clear:both;
+    background-color:#e2e2e2;
+    margin:0;
+    padding:.5em
 }
+
 .buy ul {
-    display: block;
-    margin: 0 auto 2em;
-    width: 70%;
-    overflow: hidden;
+    display:block;
+    margin:0 auto 2em;
+    width:70%;
+    overflow:hidden
 }
+
 .buy li {
-    float: left;
-    list-style-type: none;
-    background-color: #fff;
-    border-radius: 50px;
-    width: 48%;
-    padding: 1em;
-    margin: 0 1%;
+    float:left;
+    list-style-type:none;
+    background-color:#fff;
+    border-radius:50px;
+    width:48%;
+    padding:1em;
+    margin:0 1%
 }
+
 .buy li:hover {
-    background-color: #7A8B8B;
-    ;
+    background-color:#7A8B8B
 }
+
 /*Theatre*/
-
 .theatre {
-    padding: 0;
-    margin: 0;
+    padding:0;
+    margin:0
 }
+
 .theatre img {
-    width: 100%;
-    padding: 0;
+    width:100%;
+    padding:0
 }
+
 .theatre figure {
-    width: 100%;
-    margin: 0;
-    padding: 0;
+    width:100%;
+    margin:0;
+    padding:0
 }
+
 .theatre figcaption {
-    position: absolute;
-    bottom: 0;
-    padding: 1em;
+    position:absolute;
+    bottom:0;
+    padding:1em
 }
+
 .theatre h2 {
-    text-align: center;
+    text-align:center
 }
+
 .theatre a {
-    text-transform: uppercase;
+    text-transform:uppercase
 }
+
 .theatre a:hover {
-    color: red;
-    font-weight: bold;
+    color:red;
+    font-weight:700
 }
 
-figure .headline-theatre{
-    font-weight: bold;
+figure .headline-theatre {
+    font-weight:700
 }
+
 /*Footer*/
-
 footer {
-    padding: .5em 1em;
-    background-color: #7A8B8B;
-    clear: both;
+    padding:.5em 1em;
+    background-color:#7A8B8B;
+    clear:both
 }
-footer ol {
-    display: list-item;
-    list-style-type: none;
-    padding: 0;
-}
-footer a:hover {
-    color: #fff
-}
-.footaddress {
-    padding: 1em 0;
-    font-weight: bold;
-    color: #fff;
-}
-/*Activities*/
 
+footer ol {
+    display:list-item;
+    list-style-type:none;
+    padding:0
+}
+
+footer a:hover {
+    color:#fff
+}
+
+.footaddress {
+    padding:1em 0;
+    font-weight:700;
+    color:#fff
+}
+
+/*Activities*/
 .activities {
-    padding: 0 1em
+    padding:0 1em
 }
+
 .activities dd:nth-of-type(even) {
-    padding-bottom: 1em;
-    padding-top: .5em;
+    padding-bottom:1em;
+    padding-top:.5em
 }
+
 .activities dd:nth-of-type(odd) {
-    padding-top: .5em;
+    padding-top:.5em
 }
-.activities dt,
-.activities dd {
-    padding: 0;
-    margin: 0;
-    width: 100%;
+
+.activities dt,.activities dd {
+    padding:0;
+    margin:0;
+    width:100%
 }
+
 .activities dt {
-    width: 100%;
-    border-top: 1px solid #d3d3d3;
-    margin-top: 0;
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 1.2em;
-    background-color: #e1e1e1;
+    width:100%;
+    border-top:1px solid #d3d3d3;
+    margin-top:0;
+    text-align:center;
+    text-transform:uppercase;
+    font-weight:700;
+    font-size:1.2em;
+    background-color:#e1e1e1
 }
+
 .activities h2 {
-    clear: left;
-    text-align: center;
-    text-transform: uppercase;
-    display: block;
+    clear:left;
+    text-align:center;
+    text-transform:uppercase;
+    display:block
 }
 
 /*Media Queries*/
 @media only screen and (max-width: 450px) {
-    nav li {
-        width: 50%;
-    }
-    header li {
-        margin: 1em 0 0
-    }
+nav li {
+    width:50%
 }
 
+header li {
+    margin:1em 0 0
+}
+}
 
 /*Hi Thomas!  I was having an issue trying to make min width work because I am
  working backward on this (big to small) and I found that the only efficient way I could
  work around it is to use max-width instead of min-width.  Normally I would
  design small to large and start at 0em for min-width, but my brain is not working around that. */
 
-
 @media only screen and (max-width: 20em) {
     header {
-        margin: 0;
-        padding: 0;
+        margin:0;
+        padding:0
     }
-    header ul {
-        display: block;
-        list-style-type: none;
-        width: 100%;
-        padding: 0;
-        margin: 0;
-    }
-    header li {
-        text-align: center;
-        float: none;
-        margin: 0 auto;
-    }
-    header li:nth-of-type(1),
-    .header ul li:nth-of-type(3) {
-        width: 100%;
-    }
-    header li:nth-of-type(2) {
-        width: 100%;
-        margin: 0;
-        position: static;
-    }
-    header li:nth-of-type(3) {
-        padding: .5em;
-        margin: .5em auto;
-        position: static;
-        width: 90%;
-        border-radius: 20px;
-        background-color: #e2e2e2;
-    }
-    header img {
-        display: block;
-        min-width: 50px;
-        margin: 0 auto;
-        padding: 1em 0 0;
-    }
-    h1 {
-        font-size: 1.5em;
-        margin: .5em;
-    }
-    /*Hero Banner*/
 
+    header ul {
+        display:block;
+        list-style-type:none;
+        width:100%;
+        padding:0;
+        margin:0
+    }
+
+    header li {
+        text-align:center;
+        float:none;
+        margin:0 auto
+    }
+
+    header li:nth-of-type(1),.header ul li:nth-of-type(3) {
+        width:100%
+    }
+
+    header li:nth-of-type(2) {
+        width:100%;
+        margin:0;
+        position:static
+    }
+
+    header li:nth-of-type(3) {
+        padding:.5em;
+        margin:.5em auto;
+        position:static;
+        width:90%;
+        border-radius:20px;
+        background-color:#e2e2e2
+    }
+
+    header img {
+        display:block;
+        min-width:50px;
+        margin:0 auto;
+        padding:1em 0 0
+    }
+
+    h1 {
+        font-size:1.5em;
+        margin:.5em
+    }
+
+    /*Hero Banner*/
     figcaption {
-        position: static;
-        width: 100%;
-        text-align: left;
-        border-radius: 0;
-        color: #000;
-        line-height: 1.2em;
+        position:static;
+        width:100%;
+        text-align:left;
+        border-radius:0;
+        color:#000;
+        line-height:1.2em
     }
+
     figcaption h2 {
-        padding-bottom: 1em;
-        text-align: center;
+        padding-bottom:1em;
+        text-align:center
     }
+
     nav li {
-        background: #d2d2d2;
-        width: 100%;
-        text-align: center;
-        float: left;
-        list-style-type: none;
+        background:#d2d2d2;
+        width:100%;
+        text-align:center;
+        float:left;
+        list-style-type:none
     }
 
     /*Buy/Memebership*/
-
     .buy {
-        margin: 0;
-        text-align: center;
-        clear: left;
+        margin:0;
+        text-align:center;
+        clear:left
     }
+
     .buy p {
-        text-align: left;
+        text-align:left
     }
+
     .buy h2 {
-        text-align: center;
-        clear: both;
-        background-color: #e2e2e2;
-        margin: 0 0 0 0;
-        padding: .5em;
+        text-align:center;
+        clear:both;
+        background-color:#e2e2e2;
+        margin:0;
+        padding:.5em
     }
+
     .buy ul {
-        display: block;
-        margin: 0 auto 2em;
-        width: 90%;
-        margin: 1em;
-        padding: 0;
+        display:block;
+        margin:0 auto 2em;
+        width:90%;
+        margin:1em;
+        padding:0
     }
+
     .buy li {
-        float: none;
-        width: 100%;
-        padding: 1em;
-        margin: 0 auto 1em;
+        float:none;
+        width:100%;
+        padding:1em;
+        margin:0 auto 1em
     }
+
     /*Theatre*/
-
     .theatre figcaption {
-        position: static;
-        border-radius: 0;
-        width: 100%;
-    }
-    .theatre h2 {
-        text-align: center;
-        display: block;
-    }
-    .theatre a {
-        text-align: center;
-        background: lightgrey;
-        padding: 1em;
-        border-radius: 50px;
-        display: block;
+        position:static;
+        border-radius:0;
+        width:100%
     }
 
+    .theatre h2 {
+        text-align:center;
+        display:block
+    }
+
+    .theatre a {
+        text-align:center;
+        background:#d3d3d3;
+        padding:1em;
+        border-radius:50px;
+        display:block
+    }
 }
 
-
 @media only screen and (min-width: 28em) {
-
-    header li:nth-of-type(2){
-        font-size: 1em;
-        margin-top: 1em;
+    header li:nth-of-type(2) {
+        font-size:1em;
+        margin-top:1em
     }
 
     nav li {
-        width: 50%;
+        width:50%
     }
+
     header li {
-        margin: 1em 0 0
+        margin:1em 0 0
     }
 }
 
-@media only screen and (min-width:37em){
-
-header li:nth-of-type(2){
-    font-size: 1em;
-    margin-top: 0;
-}
-
-header{
-    margin: 0;
-    padding: 0;
+@media only screen and (min-width:37em) {
+    header li:nth-of-type(2) {
+        font-size:1em;
+        margin-top:0
     }
 
-header li:nth-of-type(1){
-    width: 50%;
-    padding: 0;
-    margin: 0;
-}
+    header {
+        margin:0;
+        padding:0
+    }
 
-header li:nth-of-type(3){
-    width: 10%;
-    margin: .5em;
-}
+    header li:nth-of-type(1) {
+        width:50%;
+        padding:0;
+        margin:0
+    }
 
+    header li:nth-of-type(3) {
+        width:10%;
+        margin:.5em
+    }
 
-.main img {
-    margin: 0 0 1em 0;
-    padding: 1em 1em 0;
-    width: 50%;
-    float: left;
-    border: none;
-    clear: left;
+    .main img {
+        margin:0 0 1em;
+        padding:1em 1em 0;
+        width:50%;
+        float:left;
+        border:none;
+        clear:left
+    }
 
-}
-.main dl, .main h3{
-    width: 50%;
-    float: left;
-    padding: 0;
-    margin: 1em 0 0 0;
+    .main dl,.main h3 {
+        width:50%;
+        float:left;
+        padding:0;
+        margin:1em 0 0
+    }
 
-}
+    .main p {
+        float:left;
+        clear:none;
+        width:30%;
+        margin:1.33em 0
+    }
 
-.main p{
-    float: left;
-    clear: none;
-    width: 30%;
-    margin: 1.33em 0;
-}
+    nav {
+        clear:left;
+        display:block
+    }
 
-nav {
-    clear: left;
-    display: block;
-}
-nav ol {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-}
-nav li {
-    background: #d2d2d2;
-    width: 25%;
-    text-align: center;
-    float: left;
-    list-style-type: none;
-    margin: 0;
-    font-size: .8em;
-    padding: .5em 0;
-}
-nav ul li:hover {
-    background: #FFF
-}
+    nav ol {
+        margin:0;
+        padding:0;
+        width:100%
+    }
+
+    nav li {
+        background:#d2d2d2;
+        width:25%;
+        text-align:center;
+        float:left;
+        list-style-type:none;
+        margin:0;
+        font-size:.8em;
+        padding:.5em 0
+    }
+
+    nav ul li:hover {
+        background:#FFF
+    }
 }
