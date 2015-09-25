@@ -596,10 +596,14 @@ header li {
     }
 }
 
-@media only screen and (min-width:50em) {
+@media only screen and (min-width: 50em) {
 
      .activities dt{
         width: 60%;
+        text-align: left;
+    }
+
+    .activities .calendar{
         text-align: left;
     }
 
@@ -610,6 +614,36 @@ header li {
         display: none;
     }
 
+.buy{
+    width: 50%;
+    text-align: left;
+    margin: 0;
+}
+
+.buy p{
+    padding: 0;
+    margin: 0;
+}
+ .buy ul{
+    float: none;
+    padding: 0;
+    margin: 0;
+ }
+
+ .buy li{
+    margin: 0;
+    padding:0;
+    display: block;
+    float: none;
+    width: 100%;
+    font-weight: bold;
+ }
+
+ .buy h2{
+    text-align: left;
+    padding: 0;
+    margin:; 0;
+ }
 
     .theatre figure a::after{
         content:" (" attr(href) ")";
