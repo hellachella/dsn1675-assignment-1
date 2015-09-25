@@ -519,6 +519,12 @@ header li {
 }
 
 @media only screen and (min-width:37em) {
+
+     .activities dt{
+        width: 80%;
+        text-align: left;
+    }
+
     header li:nth-of-type(2) {
         font-size:1em;
         margin-top:0
@@ -590,6 +596,14 @@ header li {
     }
 }
 
+@media only screen and (min-width:50em) {
+
+     .activities dt{
+        width: 60%;
+        text-align: left;
+    }
+
+}
 
 @media print{
     nav{
@@ -602,7 +616,7 @@ header li {
 
 header li:nth-of-type(3){
     display:none;
-}
+    }
 
     .main a{
         display: none;
