@@ -676,6 +676,10 @@ header li:nth-of-type(3){
     color: #999;
     }
 
+footer li:nth-child(n+6){
+    display: none;
+}
+/*
     footer li:nth-of-type(6){
         display:none;
     }
@@ -692,7 +696,7 @@ header li:nth-of-type(3){
         display:none;
     }
 
-
+*/
 }
 
 
