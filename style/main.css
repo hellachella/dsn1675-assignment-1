@@ -599,6 +599,11 @@ header li {
     /*you can display a url.  ::after is a pseudo element, which doesn't exist until you put something into them.
     You can use before and after to add pullquotes etc etc.  Look into ::before & ::after
     you can grab the attributes of the element, such as href*/
+
+header li:nth-of-type(3){
+    display:none;
+}
+
     .main a{
         display: none;
     }
