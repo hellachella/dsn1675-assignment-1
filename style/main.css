@@ -589,3 +589,25 @@ header li {
         background:#FFF
     }
 }
+
+
+@media print{
+    nav{
+        display: none;
+    }
+
+    /*you can display a url.  ::after is a pseudo element, which doesn't exist until you put something into them.
+    You can use before and after to add pullquotes etc etc.  Look into ::before & ::after
+    you can grab the attributes of the element, such as href*/
+    .main a{
+        display: none;
+    }
+
+        footer li:nth-of-type(3) a::after{
+        content: " ""2am-3am";
+        color: #999;
+    }
+    }
+}
+
+
