@@ -607,7 +607,24 @@ header li {
         content: " ""2am-3am";
         color: #999;
     }
+
+    footer li:nth-of-type(6){
+        display:none;
     }
+    footer li:nth-of-type(7){
+        display:none;
+    }
+    footer li:nth-of-type(8){
+        display:none;
+    }
+    footer li:nth-of-type(9){
+        display:none;
+    }
+    footer li:nth-of-type(10){
+        display:none;
+    }
+
+
 }
 
 
