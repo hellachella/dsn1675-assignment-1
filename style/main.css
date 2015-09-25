@@ -506,15 +506,15 @@ header li {
 @media only screen and (min-width: 28em) {
     header li:nth-of-type(2) {
         font-size:1em;
-        margin-top:1em
+        margin-top:1em;
     }
 
     nav li {
-        width:50%
+        width: 50%;
     }
 
     header li {
-        margin:1em 0 0
+        margin:1em 0 0;
     }
 }
 
@@ -610,6 +610,21 @@ header li {
         display: none;
     }
 
+
+    .theatre figure a::after{
+        content:" (" attr(href) ")";
+    }
+
+    .theatre figcaption{
+        position: static;
+    }
+
+
+    .main img{
+        width: 50%;
+        clear: left;
+    }
+
     /*you can display a url.  ::after is a pseudo element, which doesn't exist until you put something into them.
     You can use before and after to add pullquotes etc etc.  Look into ::before & ::after
     you can grab the attributes of the element, such as href*/
@@ -622,9 +637,9 @@ header li:nth-of-type(3){
         display: none;
     }
 
-        footer li:nth-of-type(3) a::after{
-        content: " ""2am-3am";
-        color: #999;
+    footer li:nth-of-type(3) a::after{
+    content: " ""2am-3am";
+    color: #999;
     }
 
     footer li:nth-of-type(6){
